@@ -105,10 +105,10 @@ module.exports = function (grunt) {
                 stderr: true
             },
             build_files_editor: {
-                command: "npm install",
-                cwd: './addons/cb.files.editor/',
-                stdout: true,
-                stderr: true
+               command: "npm install --unsafe-perm",
+               cwd: './addons/cb.files.editor/',
+               stdout: true,
+               stderr: true
             },
             clean_addons: {
                 command: "rm -rf */**/addon-built.js ./addons/**/node_modules",
